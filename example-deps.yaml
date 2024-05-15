@@ -1,0 +1,6 @@
+ignore: thisline
+# originalImage=alpine
+version: 3.19.1
+alsIgnore: thislinetoo
+# originalImage=busybox
+foobar: my-custom-registry/busybox:1.35.0
