@@ -4,7 +4,7 @@
         "config:best-practices"
     ],
     "enabledManagers": [
-        "custom.regex"
+        "custom.regex", "dockerfile"
     ],
     "customManagers": [
         {
