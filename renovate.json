@@ -13,9 +13,8 @@
                 "^.*\\.ya?ml$"
             ],
             "matchStrings": [
-                "originalImage=(?<depName>(?<packageName>.*?)\\s[\\w\\s\\:\\-\\/]*:\\s*)(?<currentValue>[vV]?\\d+[\\.\\-\\w+]*)(@(?<currentDigest>sha256:[a-f0-9]+))?"
+                "# originalImage=(?<packageName>.+)\n.+: .+:(?<currentValue>.+)"
             ],
-            "autoReplaceStringTemplate": "originalImage={{{depName}}}{{{newValue}}}{{#if newDigest}}@{{{newDigest}}}{{/if}}",
             "datasourceTemplate": "docker"
         }
     ]
