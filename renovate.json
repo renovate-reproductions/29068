@@ -13,7 +13,7 @@
                 "^.*\\.ya?ml$"
             ],
             "matchStrings": [
-                "# originalImage=(?<packageName>.+)\n.+: .+:(?<currentValue>.+)"
+                "# originalImage=(?<packageName>.+)\n[^:]+: [^:]+:(?<currentValue>.+)(@(?<currentDigest>sha256:[a-f0-9]+))?"
             ],
             "datasourceTemplate": "docker"
         }
